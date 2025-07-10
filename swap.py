@@ -1,0 +1,9 @@
+a=30
+b=20
+print("before swap a=",a)
+print("before swap b=",b)
+a=a+b
+b=a-b
+a=a-b
+print("after swap a=",a)
+print("after swap b=",b)
