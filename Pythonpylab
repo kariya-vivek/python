@@ -1,0 +1,32 @@
+import matplotlib.pyplot as plt
+
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [2, 5, 7, 1, 6]
+
+# Basic plot
+# 'fmt' can be given like 'o--r' (circle marker, dashed line, red color)
+plt.plot(x, y, 'o--b',  # fmt = marker 'o', line '--', color 'b' (blue)
+         markersize=10,        # Marker size
+         markerfacecolor='yellow',  # Marker fill color
+         markeredgecolor='red',     # Marker border color
+         markeredgewidth=2,         # Marker border thickness
+         linestyle='--',            # Line style (dashed)
+         linewidth=2)               # Line width
+
+# Add Grid (uncomment if needed)
+plt.grid(True)
+
+# Set labels
+plt.xlabel("X Axis Label")
+plt.ylabel("Y Axis Label")
+
+# Set X and Y limits (uncomment to apply)
+plt.xlim(0, 6)
+plt.ylim(0, 10)
+
+# Add title (optional)
+plt.title("Demo Plot with All Features")
+
+# Show the plot
+plt.show()
