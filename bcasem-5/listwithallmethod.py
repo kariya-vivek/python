@@ -1,0 +1,22 @@
+data = [10, 20, 30, 40, 50]
+
+data.append(60)
+data.extend([70, 80])
+data.insert(2, 25)
+data.remove(40)
+data.pop()
+data.pop(0)
+data.sort()
+data.reverse()
+data.clear()
+data = [10, 20, 30, 20, 10]
+print(data.count(20))
+print(data.index(30))
+copy_data = data.copy()
+print(copy_data)
+print(len(data))
+print(max(data))
+print(min(data))
+print(sum(data))
+print(sorted(data))
+print(data.__contains__(20))

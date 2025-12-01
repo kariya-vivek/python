@@ -1,0 +1,22 @@
+data = {"name": "Alice", "age": 25, "city": "New York"}
+
+data["country"] = "USA"
+data.update({"gender": "female"})
+print(data.get("name"))
+print(data.get("email", "Not Found"))
+print(data.keys())
+print(data.values())
+print(data.items())
+print(data.pop("age"))
+print(data.popitem())
+print(data.setdefault("email", "alice@example.com"))
+copy_data = data.copy()
+data.clear()
+data = dict.fromkeys(["a", "b", "c"], 0)
+print(len(data))
+print(type(data))
+print("a" in data)
+print(data.__contains__("b"))
+print(data.__getitem__("a"))
+print(data.__setitem__("d", 4))
+print(data)

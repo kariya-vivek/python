@@ -1,0 +1,26 @@
+data = {10, 20, 30}
+
+data.add(40)
+data.update([50, 60])
+data.remove(20)
+data.discard(100)
+data.pop()
+copy_data = data.copy()
+data.clear()
+data = {10, 20, 30}
+other = {30, 40, 50}
+print(data.union(other))
+print(data.intersection(other))
+print(data.difference(other))
+print(data.symmetric_difference(other))
+data.update(other)
+data.intersection_update({10, 30})
+data.difference_update({10})
+data.symmetric_difference_update({50})
+print(data.issubset({10, 30, 50}))
+print(data.issuperset({10}))
+print(data.isdisjoint({100}))
+print(len(data))
+print(max(data))
+print(min(data))
+print(sum(data))
